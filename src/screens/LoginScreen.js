@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, View, Text, TextInput, TouchableOpacity } from 'react-native';
+import { colors } from '../styles';
 
 export const LoginScreen = ({ navigation, route }) => {
   const [email, setEmail] = useState('');
@@ -102,7 +103,7 @@ const styles = StyleSheet.create({
     button: {
     width: '100%',
     height: 50,
-    backgroundColor: '#8B0000',
+    backgroundColor: colors.primary,
     borderRadius: 8,
     marginVertical: 5,
     justifyContent: 'center',
@@ -130,7 +131,7 @@ const styles = StyleSheet.create({
   },
   registerLink: {
     fontSize: 14,
-    color: '#8B0000',
+    color: colors.secondary,
   },
 
 });

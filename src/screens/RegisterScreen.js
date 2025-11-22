@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, TextInput, TouchableOpacity, Alert } from 'react-native';
+import { colors } from '../styles';
 
 export const RegisterScreen = ({ navigation }) => {
   const [name, setName] = useState('');
@@ -104,7 +105,7 @@ const styles = StyleSheet.create({
     button: {    
     width: '100%',
     height: 50,
-    backgroundColor: '#8B0000',
+    backgroundColor: colors.primary,
     marginVertical: 5,
     borderRadius: 8,
     justifyContent: 'center',

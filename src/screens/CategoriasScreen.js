@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import { useRoute, useNavigation } from '@react-navigation/native';
 import { useEventos } from '../context/EventosContext';
+import { colors } from '../styles';
 
 const CategoriasScreen = () => {
   const route = useRoute();
@@ -60,7 +61,7 @@ const styles = StyleSheet.create({
   },
   header: {
     padding: 20,
-    backgroundColor: '#1C2736',
+    backgroundColor: colors.primary,
   },
   title: {
     fontSize: 24,
@@ -114,7 +115,7 @@ const styles = StyleSheet.create({
   eventoPrecio: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: '#1C2736',
+    color: colors.primary,
   },
 });
 

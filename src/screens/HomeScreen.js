@@ -12,6 +12,7 @@ import { useNavigation } from '@react-navigation/native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { useEventos } from '../context/EventosContext';
+import { colors } from '../styles';
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -91,7 +92,7 @@ const styles = StyleSheet.create({
   },
   header: {
     padding: 20,
-    backgroundColor: '#1C2736',
+    backgroundColor: colors.primary,
   },
   title: {
     fontSize: 28,

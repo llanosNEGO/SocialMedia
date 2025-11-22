@@ -11,6 +11,7 @@ import {
 import { useRoute } from '@react-navigation/native';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { useEventos } from '../context/EventosContext';
+import { colors } from '../styles';
 
 const EventoDetailScreen = () => {
   const route = useRoute();
@@ -41,17 +42,17 @@ const EventoDetailScreen = () => {
           
           <View style={styles.infoContainer}>
             <View style={styles.infoItem}>
-              <FontAwesome5 name="calendar" size={16} color="#1C2736" />
+              <FontAwesome5 name="calendar" size={16} color={colors.primary} />
               <Text style={styles.infoText}>{evento.fecha} • {evento.hora}</Text>
             </View>
             
             <View style={styles.infoItem}>
-              <FontAwesome5 name="map-marker-alt" size={16} color="#1C2736" />
+              <FontAwesome5 name="map-marker-alt" size={16} color={colors.primary} />
               <Text style={styles.infoText}>{evento.lugar}</Text>
             </View>
             
             <View style={styles.infoItem}>
-              <FontAwesome5 name="users" size={16} color="#1C2736" />
+              <FontAwesome5 name="users" size={16} color={colors.primary} />
               <Text style={styles.infoText}>{evento.asientosDisponibles} asientos disponibles</Text>
             </View>
           </View>
@@ -116,7 +117,7 @@ const styles = StyleSheet.create({
   precio: {
     fontSize: 32,
     fontWeight: 'bold',
-    color: '#1C2736',
+    color: colors.secondary,
   },
   precioLabel: {
     fontSize: 14,
@@ -137,7 +138,7 @@ const styles = StyleSheet.create({
     color: '#666',
   },
   comprarButton: {
-    backgroundColor: '#1C2736',
+    backgroundColor: colors.primary,
     padding: 18,
     borderRadius: 12,
     alignItems: 'center',

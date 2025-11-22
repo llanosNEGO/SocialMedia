@@ -64,11 +64,8 @@ export const RegisterScreen = ({ navigation }) => {
 
       <Text style={styles.orText}>o</Text>
 
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Continuar con Google</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Continuar con Facebook</Text>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Login')}>
+        <Text style={styles.buttonText}>Vuelve al inicio de sesión</Text>
       </TouchableOpacity>
     </View>
   );

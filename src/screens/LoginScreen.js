@@ -42,11 +42,30 @@ export const LoginScreen = ({ navigation, route }) => {
         <Text style={styles.buttonText}>Ingresar</Text>
       </TouchableOpacity>
 
-      <Text style={styles.orText}>¿No tienes cuenta?</Text>
+      <Text style={styles.orText}>O continua con</Text>
 
-      <TouchableOpacity style={[styles.button, styles.secondary]} onPress={() => navigation.navigate('Register')}>
-        <Text style={[styles.buttonText, styles.secondaryText]}>Crear cuenta nueva</Text>
+      <TouchableOpacity style={[styles.button, styles.secondary]}>
+        <Text style={[styles.buttonText, styles.secondaryText]}>Google</Text>
       </TouchableOpacity>
+      <TouchableOpacity style={[styles.button, styles.secondary]}>
+        <Text style={[styles.buttonText, styles.secondaryText]}>Facebook</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={[styles.button, styles.secondary]}>
+        <Text style={[styles.buttonText, styles.secondaryText]}>Numero de Teléfono</Text>
+      </TouchableOpacity>
+      
+      <View style={styles.registerContainer}>
+        <Text style={styles.registerText}>¿No tienes cuenta? </Text>
+        <TouchableOpacity onPress={() => navigation.navigate("Register")}>
+          <Text style={styles.registerLink}>
+            Registrarse
+          </Text>          
+        </TouchableOpacity>
+        <Text style={styles.registerText}> con correo electrónico</Text>
+      </View>
+      
+      
+
     </View>
   );
 };
@@ -85,6 +104,7 @@ const styles = StyleSheet.create({
     height: 50,
     backgroundColor: '#8B0000',
     borderRadius: 8,
+    marginVertical: 5,
     justifyContent: 'center',
     alignItems: 'center',
     },
@@ -99,4 +119,20 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#666',
   },
+   registerContainer: {
+    flexDirection: 'row',
+    marginTop: 20,  
+  },
+  registerText: {
+    fontSize: 14,
+    color: '#666',
+    fontWeight: 'bold',
+  },
+  registerLink: {
+    fontSize: 14,
+    color: '#8B0000',
+  },
+
 });
+
+ 

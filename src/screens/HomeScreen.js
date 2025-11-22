@@ -195,6 +195,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#FFD700',
   },
+  logoutText: {
+    marginTop: 10,
+    color: '#fff',
+    textDecorationLine: 'underline',
+  },
 });
 
 export default HomeScreen;

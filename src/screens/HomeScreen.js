@@ -55,6 +55,9 @@ const HomeScreen = () => {
         <View style={styles.header}>
           <Text style={styles.title}>Eventos Sociales</Text>
           <Text style={styles.subtitle}>Descubre los mejores eventos en tu ciudad</Text>
+          <TouchableOpacity onPress={() => navigation.navigate('Login')}>
+            <Text style={styles.logoutText}>Cerrar Sesión</Text>
+          </TouchableOpacity>
         </View>
 
         {/* Categorías */}
@@ -191,6 +194,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     color: '#FFD700',
+  },
+  logoutText: {
+    marginTop: 10,
+    color: '#fff',
+    textDecorationLine: 'underline',
   },
 });
 

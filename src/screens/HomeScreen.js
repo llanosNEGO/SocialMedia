@@ -42,7 +42,7 @@ const HomeScreen = () => {
       onPress={() => navigation.navigate('Categorias', { categoriaId: categoria.id })}
     >
       <View style={styles.categoriaIcon}>
-        <FontAwesome5 name={categoria.icono} size={24} color="#8B0000" />
+        <FontAwesome5 name={categoria.icono} size={24} color="#1C2736" />
       </View>
       <Text style={styles.categoriaNombre}>{categoria.nombre}</Text>
     </TouchableOpacity>
@@ -84,11 +84,11 @@ const HomeScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#525B66',
   },
   header: {
     padding: 20,
-    backgroundColor: '#8B0000',
+    backgroundColor: '#1C2736',
   },
   title: {
     fontSize: 28,

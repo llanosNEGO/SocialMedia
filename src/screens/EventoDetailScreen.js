@@ -41,17 +41,17 @@ const EventoDetailScreen = () => {
           
           <View style={styles.infoContainer}>
             <View style={styles.infoItem}>
-              <FontAwesome5 name="calendar" size={16} color="#8B0000" />
+              <FontAwesome5 name="calendar" size={16} color="#1C2736" />
               <Text style={styles.infoText}>{evento.fecha} • {evento.hora}</Text>
             </View>
             
             <View style={styles.infoItem}>
-              <FontAwesome5 name="map-marker-alt" size={16} color="#8B0000" />
+              <FontAwesome5 name="map-marker-alt" size={16} color="#1C2736" />
               <Text style={styles.infoText}>{evento.lugar}</Text>
             </View>
             
             <View style={styles.infoItem}>
-              <FontAwesome5 name="users" size={16} color="#8B0000" />
+              <FontAwesome5 name="users" size={16} color="#1C2736" />
               <Text style={styles.infoText}>{evento.asientosDisponibles} asientos disponibles</Text>
             </View>
           </View>
@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
   precio: {
     fontSize: 32,
     fontWeight: 'bold',
-    color: '#8B0000',
+    color: '#1C2736',
   },
   precioLabel: {
     fontSize: 14,
@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
     color: '#666',
   },
   comprarButton: {
-    backgroundColor: '#8B0000',
+    backgroundColor: '#1C2736',
     padding: 18,
     borderRadius: 12,
     alignItems: 'center',

@@ -61,6 +61,7 @@ export const EventosProvider = ({ children }) => {
     ];
 
     const categoriasEjemplo = [
+      { id: 'todos', nombre: 'Todos', icono: 'th-large' },
       { id: 'teatro', nombre: 'Teatro', icono: 'theater-masks' },
       { id: 'musica', nombre: 'Música', icono: 'music' },
       { id: 'danza', nombre: 'Danza', icono: 'user-friends' },
@@ -73,6 +74,7 @@ export const EventosProvider = ({ children }) => {
   }, []);
 
   const getEventosPorCategoria = (categoria) => {
+    if (!categoria || categoria === 'todos') return eventos;
     return eventos.filter(evento => evento.categoria === categoria);
   };
 

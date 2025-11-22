@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   },
   header: {
     padding: 20,
-    backgroundColor: '#8B0000',
+    backgroundColor: '#1C2736',
   },
   title: {
     fontSize: 24,
@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
   eventoPrecio: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: '#8B0000',
+    color: '#1C2736',
   },
 });
 
